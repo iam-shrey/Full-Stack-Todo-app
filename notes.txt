@@ -1,0 +1,12 @@
+1. CORS is a security feature implemented by browsers to restrict web pages from making requests to a domain different from the one that served the web page.
+ This is a protection mechanism to prevent potentially malicious websites from interacting with your server.
+ here localhost 3000 needs to access localhost 8080
+ 
+	we need to override addCorsMappings() of WebMvcConfigurer interface for this...
+	
+2. 3 dependencies are added in line 29-42 in pom.xml
+
+3. BasicAuthenticationSecurityConfiguration is not used and it's @Configuration is commented as we have shifted JWT authentication....
+
+4. While Spring Security provides robust security features,
+ integrating JWT can enhance your application's security, scalability, and flexibility, especially in modern distributed systems.
